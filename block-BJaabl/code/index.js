@@ -2,6 +2,12 @@
 1. Create a function named `sayHello` that that accepts a parameter `name` and alert `Hello [name]!`.
 */
 
+// function sayHello(name) {
+//   alert(`Hello, ${name}`);
+// }
+
+// sayHello("Gurinder");
+
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
@@ -10,6 +16,12 @@ Example:
   getFullName("John", "Snow"); // "John Snow"
   getFullName("Nelson", "Mandela"); // "Nelson Mandela"
 */
+
+// function getFullName(firstName, lastName) {
+//   return `${firstName} ${lastName}`;
+// }
+
+// console.log(getFullName("Tim", "Allen"));
 
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
@@ -20,6 +32,12 @@ addTwoNumbers(10, 22); // 32
 addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
+
+// function addTwoNumbers(firstNum, secondNum) {
+//   return firstNum + secondNum;
+// }
+
+// console.log(addTwoNumbers(23, 23));
 
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
@@ -33,6 +51,21 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 
+// function calc(numA, numB, operation) {
+//   if (operation == "add") {
+//     return numA + numB;
+//   } else if (operation == "sub") {
+//     return numA - numB;
+//   } else if (operation == "mul") {
+//     return numA * numB;
+//   } else if (operation == "div") {
+//     return numA / numB;
+//   } else {
+//     return `Error`;
+//   }
+// }
+
+// console.log(calc(1222, 122, "div"));
 
 /*
 5. Create a function named `isLeapYear` that accepts a number data type and return `true` or `false` based
@@ -42,7 +75,19 @@ isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
 
+// function isLeapYear(year) {
+//   return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+// }
+// console.log(isLeapYear(2000));
 
 /*
 6. Create a function named `getFactorial` that accepts a number and return the factorial of the number.
 */
+// function getFactorial(num) {
+//   if (num === 0) {
+//     return 1;
+//   } else {
+//     return num * getFactorial(num - 1);
+//   }
+// }
+// console.log(getFactorial(100));
